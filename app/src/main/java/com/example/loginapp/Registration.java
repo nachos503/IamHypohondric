@@ -1,10 +1,7 @@
 package com.example.loginapp;
 import android.content.ContentValues;
-import android.content.Context;
 import android.content.Intent;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.RadioGroup;
@@ -14,7 +11,7 @@ import android.view.View;
 import android.text.TextUtils;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class Registration extends AppCompatActivity {
 
     private EditText editTextUsername, editTextPassword, editTextEmail, editTextPhoneNumber;
     private RadioGroup radioGroupSex;
@@ -26,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_registration);
 
 
         // Создаем базу данных
@@ -106,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
         values.put("birthday_year", user.getYear());
         long result = database.insert("users", null, values);
 
-        Intent intent = new Intent(this, Login.class);
+        Intent intent = new Intent(this, MainScreen.class);
         startActivity(intent);
     }
 }
