@@ -22,7 +22,7 @@
 
 
     <Button
-        android:id="@+id/service1"
+        android:id="@+id/pill_tracker"
         android:layout_width="379dp"
         android:layout_height="154dp"
         android:layout_marginTop="17dp"
@@ -40,7 +40,7 @@
         android:layout_marginEnd="15dp"
         android:text="Сервис 2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/service1" />
+        app:layout_constraintTop_toBottomOf="@+id/pill_tracker" />
 
     <Button
         android:id="@+id/service3"
