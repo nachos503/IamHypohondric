@@ -27,7 +27,7 @@ public class MainScreen extends  AppCompatActivity{
         setContentView(R.layout.activity_main_screen);
         pillTrackerButton = findViewById(R.id.pill_tracker);
 
-//Обрабатываем нажатие на кнопку первого сервиса
+    //Обрабатываем нажатие на кнопку первого сервиса
         Intent intent = new Intent(this, pill_tracker.class);
 
         pillTrackerButton.setOnClickListener(new View.OnClickListener() {

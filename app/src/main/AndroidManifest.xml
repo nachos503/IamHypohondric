@@ -36,8 +36,7 @@
         <activity
             android:name=".Login"
             android:exported="false"
-            android:label="@string/title_activity_login"
-            android:theme="@style/Theme.LoginApp.NoActionBar" />
+            android:label="@string/title_activity_login" />
     </application>
 
 </manifest>

@@ -66,13 +66,13 @@ public class pill_tracker extends AppCompatActivity {
         // В данном примере просто возвращается фиктивный список таблеток
         List<String> tablets = new ArrayList<>();
         if (dayOfMonth % 2 == 0) {
-            tablets.add("Tablet 1");
+            tablets.add("Супрастинчик");
         }
         if (dayOfMonth % 3 == 0) {
-            tablets.add("Tablet 2");
+            tablets.add("Витамишки");
         }
         if (dayOfMonth % 5 == 0) {
-            tablets.add("Tablet 3");
+            tablets.add("Фенибут");
         }
         return tablets;
     }

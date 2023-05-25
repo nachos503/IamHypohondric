@@ -180,5 +180,18 @@
                     android:layout_margin="16dp"
                     android:text="Register" />
 
+                <TextView
+                    android:id="@+id/passwordRequire"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edittext_password"
+                    android:layout_marginTop="-1dp"
+                    android:text="Пароль не удовлетворяет требованиям"
+                    android:textColor="@color/red"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
         </RelativeLayout>
 </ScrollView>
